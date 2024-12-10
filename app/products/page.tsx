@@ -1,9 +1,9 @@
 import React from 'react'
 import Ceramics from '../components/Ceramics'
 import Creamics2 from '../components/Creamics2'
-import Footer from '../components/Footer'
 import Tophead from '../components/Tophead'
 import Lowerhead from '../components/Lowerhead'
+import Footer from '../components/Footer'
 import Link from 'next/link'
 
 function page() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiCircleCheck } from "react-icons/ci";
+
 
 function Last2() {
   return (
