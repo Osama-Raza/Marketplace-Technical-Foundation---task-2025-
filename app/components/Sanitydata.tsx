@@ -1,7 +1,6 @@
 
 
-import { sanityFetch } from "@/sanity/lib/live"
-import { getProduct } from "@/sanity/lib/sanityFetch"
+
 
 import Image from "next/image"
 import Link from "next/link"
@@ -19,9 +18,9 @@ export type Product = {
   };
   export default async function HomePage (){
 
-    let prductsArray: Product[] = [];
+    const prductsArray: Product[] = [];
     
-      const response = await sanityFetch({query : getProduct})
+      
     
      
     
