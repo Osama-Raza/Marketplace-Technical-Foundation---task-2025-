@@ -9,7 +9,7 @@ import Tophead from "./components/Tophead";
 import Lowerhead from "./components/Lowerhead";
 import Footer from "./components/Footer";
 import Link from "next/link";
-import Products from "./components/Sanitydata";
+import HomePage from "./components/Sanitydata";
 
 export default function Home() {
 
@@ -26,7 +26,7 @@ export default function Home() {
       <Link rel="stylesheet" className='text-[#726e8d] w-[95%] mx-auto gap-5 hover:scale-105 my-2' href="/cart"> Cart </Link>
       </div>
       <Hero />
-      <Products />
+      <HomePage />
       <Info />
       <Ceramics />
       <Popular />

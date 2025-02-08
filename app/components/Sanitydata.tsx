@@ -17,7 +17,7 @@ export type Product = {
         current: string
     }   
   };
-  export default async function Home (){
+  export default async function HomePage (){
 
     let prductsArray: Product[] = [];
     
@@ -30,9 +30,9 @@ export type Product = {
         localStorage.setItem('cart' ,JSON.stringify(updatedCart))
     
         alert (`${product.name} ${handleAddToCart} has been added to cart successfully`)
-        
+      }
     
-        // }
+        
       
         return (
           <div className="w-full p-2">
@@ -70,4 +70,4 @@ export type Product = {
   
 
 
-    }
+    
