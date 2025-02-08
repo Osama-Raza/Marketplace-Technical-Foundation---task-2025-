@@ -1,7 +1,7 @@
 "use client"
 import React, {useState , useEffect} from "react";
 import { Product } from "@/types/products";
- export default function actionCart() {
+ export default function ActionCart() {
     const [cartItems , setCartItems] = useState<Product[]>([])
     useEffect(() => {
         const cart = JSON.parse(localStorage.getItem('cart') || '[]') as Product[]

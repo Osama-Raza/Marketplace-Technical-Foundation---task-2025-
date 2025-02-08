@@ -29,10 +29,10 @@ export type Product = {
         const updatedCart = [...existingCart , product]
         localStorage.setItem('cart' ,JSON.stringify(updatedCart))
     
-        alert (`${product.name} has been added to cart successfully`)
+        alert (`${product.name} ${handleAddToCart} has been added to cart successfully`)
         
     
-        }
+        // }
       
         return (
           <div className="w-full p-2">
@@ -57,10 +57,7 @@ export type Product = {
                      )}
                <h2 className="text-lg font-semibold mt-4">{product.name}</h2>
                <p className="text-lg font-semibold mt-4">Rs.{product.price}</p>
-               {/* <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-600"
-             onClick={() => handleAddToCart(product)}>
-              Add to cart
-             </button> */}
+             
                     </Link>
             </div>
               ))
