@@ -24,13 +24,13 @@ export type Product = {
       const response = await sanityFetch({query : getProduct})
     
       prductsArray = response.data || []
-      
+      const handleAddToCart = (product : any) => {
         const existingCart = JSON.parse(localStorage.getItem('cart') || '[]' )
-        const updatedCart = [...existingCart ]
+        const updatedCart = [...existingCart , product]
         localStorage.setItem('cart' ,JSON.stringify(updatedCart))
     
-        alert (`has been added to cart successfully`)
-      
+        alert (`${product.name} ${handleAddToCart} has been added to cart successfully`)
+      }
     
         
       
